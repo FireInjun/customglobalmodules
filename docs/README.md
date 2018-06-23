@@ -35,4 +35,4 @@ The folder name you save it to in the module folder MUST match the module name.
 C:\Windows\System32\WindowsPowerShell\v1.0\Modules\ ```stop-class```
 ### Additionally:
 your files must be saved as ```.psm1``` files in order to work as modules.
-![alt text](https://raw.githubusercontent.com/fireinjun/customglobalmodules/master/docs/exampleprofile.png)
+![](https://raw.githubusercontent.com/fireinjun/customglobalmodules/master/docs/exampleprofile.png)
