@@ -1,7 +1,7 @@
 function global:gacp() {
   $a = Get-Date -Format g
   git add .
-  git commit -a -m "$a"
+  git commit -m "$a"
   git push
   clear
 }
