@@ -1,5 +1,5 @@
 function global:FancyFunction() {
-  # do something interesting here.
+  push
 }
 
 Export-ModuleMember -function FancyFunction 
