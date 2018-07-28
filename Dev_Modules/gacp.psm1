@@ -4,7 +4,7 @@ function global:gacp() {
   $a = (Get-Date -Format g).ToString()
   git commit -m "$a"
   git push
-  clear
+  clear-h
   write-output ("$a")
 }
 
