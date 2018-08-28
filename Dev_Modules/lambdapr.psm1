@@ -1,4 +1,5 @@
-function global:initpr() {
+function global:lambdapr() {
+  # hard code for your username
   git clone https://github.com/FireInjun/"$args".git
   Set-Location .\$args\
   New-Item INIT
@@ -8,8 +9,8 @@ function global:initpr() {
   git commit -m "INIT"
   git push
   Clear-Host
-  start chrome https://github.com/FireInjun/"$args"
+  Start-Process chrome https://github.com/LambdaSchool/"$args"/compare
   write-output ("$a" + "  Go Make the PR now.")
 }
 
-Export-ModuleMember -function initpr
+Export-ModuleMember -function lambdapr

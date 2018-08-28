@@ -1,5 +1,5 @@
 
-function global:automern() {
+function global:automern_code() {
   $args
   mkdir $args -force
   create-react-app $args\client --use-npm
@@ -18,7 +18,9 @@ function global:automern() {
   Push-Location -passthru .\client
   npm install --save axios react-router react-redux react-router-dom redux redux-logger redux-thunk
   Clear-Host
+  Pop-Location
+  code .
   
 }
 
-Export-ModuleMember -function automern 
+Export-ModuleMember -function automern_code 
