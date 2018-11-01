@@ -4,9 +4,9 @@ function global:lambdapr() {
   Set-Location .\$args\
   New-Item INIT
   git add .
-
+  $b = "INIT FOR PR"
   $a = (Get-Date -Format g).ToString()
-  git commit -m "INIT"
+  git commit -m "$b  $a"
   git push
   Clear-Host
   Start-Process chrome https://github.com/LambdaSchool/"$args"/compare
